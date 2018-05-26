@@ -2,9 +2,6 @@
 
 Application that shows a list with the latest models of mobile phones and some of their features such as name, price, color, etc..
 
----
-
-
 ## The application consists of a client and a server
 
 ### Steps to run the Server locally:
