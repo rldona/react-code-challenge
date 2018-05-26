@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.js"],"names":["Server","require","init"],"mappings":"AAAA;;AAEA,IAAMA,SAASC,QAAQ,UAAR,CAAf;;AAEAD,OAAOE,IAAP","file":"index.js","sourcesContent":["'use strict';\n\nconst Server = require('./server');\n\nServer.init();\n"]}

@@ -1,0 +1,73 @@
+.phone-detail-component {
+  background: #FFF;
+  border-bottom: 5px solid #4CAF50;
+}
+
+.phone-detail-component .content {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem 1rem 2rem;
+}
+
+.phone-detail-component img {
+  width: 100%;
+  max-width: 100px;
+  margin-bottom: 2rem;
+}
+
+
+
+.phone-detail-component .button{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 9;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  /* transition: all ease-in-out 0.15s; */
+}
+
+.phone-detail-component .info .title {
+  margin-bottom: 1rem;
+}
+
+.phone-detail-component .info .field {
+  font-weight: 300;
+  margin-top: 10px;
+  font-size: .8rem;
+}
+
+@media (min-width: 767px) {
+  .phone-detail-component .content {
+    flex-wrap: nowrap;
+    box-shadow: 0 1px 100px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    padding: 5rem 6rem 5rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .phone-detail-component img {
+    margin-bottom: 0;
+    max-width: 150px;
+  }
+
+  .phone-detail-component .info {
+    border-left: 1px solid #000;
+    padding-left: 2rem;
+  }
+}
+
+@media (min-width: 460px) {
+  .phone-detail-component .image {
+    margin-right: 2rem;
+  }
+
+  .phone-detail-component .image {
+    margin-right: 2rem;
+  }
+}

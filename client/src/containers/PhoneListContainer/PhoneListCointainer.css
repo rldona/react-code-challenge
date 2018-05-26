@@ -1,0 +1,14 @@
+.phone-list-container .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+	width: 100%;
+	max-width: 1100px;
+	margin: 1rem auto;
+}
+
+@media (min-width: 420px) {
+  .phone-list-container {
+    margin: 3rem auto;
+  }
+}
