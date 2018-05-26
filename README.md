@@ -1,11 +1,11 @@
-Frontend Coding Challenge for Candidates
-========================================
-
 ## Phone Catalog App
 
 Application that shows a list with the latest models of mobile phones and some of their features such as name, price, color, etc..
 
-The application consists of a client and a server.
+---
+
+
+## The application consists of a client and a server
 
 ### Steps to run the Server locally:
 
@@ -57,7 +57,11 @@ docker run -d --name code-challenge-paradigma-server -p 3000:3000 code-challenge
 
 ## All together with Docker Compose:
 
--
+```javascript
+docker-compose up
+```
+
+---
 
 ## Technologies used to make the application:
 
