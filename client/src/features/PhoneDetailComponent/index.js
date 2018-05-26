@@ -18,6 +18,10 @@ class PhoneDetailComponent extends Component {
     this.props.history.goBack();
   }
 
+  _goHome = () => {
+    this.props.history.push('/');
+  }
+
   render() {
     if (this.props.phoneList.pending || !this.props.phoneList.items ) {
       return (
@@ -28,9 +32,13 @@ class PhoneDetailComponent extends Component {
     const phone = this.props.phoneList.items[this.props.match.params.id]
 
     if (typeof phone === 'undefined') {
-      this.props.history.push('/');
       return (
-        null
+        <div className="phone-detail-component animated bounceInDown">
+          <div className="content">
+            <Icon icon={ ic_arrow_back } size={30} className="button go-back" onClick={this._goHome} />
+            <div>There is no phone with that identifier :(</div>
+          </div>
+        </div>
       );
     }
 
