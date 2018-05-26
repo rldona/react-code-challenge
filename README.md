@@ -2,6 +2,9 @@
 
 Application that shows a list with the latest models of mobile phones and some of their features such as name, price, color, etc..
 
+![alt text](./app-home.png "Home preview")
+![alt text](./app-detail.png "Detail preview")
+
 ## The application consists of a client and a server
 
 ### Steps to run the Server locally:
