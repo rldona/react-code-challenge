@@ -1,0 +1,12 @@
+.header-component {
+  width: 100%;
+  background: #FFF;
+  padding: 2rem;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-component h1 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}

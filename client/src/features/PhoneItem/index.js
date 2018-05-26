@@ -1,23 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import './Phone.css';
 
-class PhoneItem extends Component {
-  navigateTo = (id, e) => {
-    this.props.history.push(`/phones/${id}`);
-    this.props.onSelectedPhone(id);
-  }
-
-  render() {
-    const phone = this.props.phone;
-
-    return (
-      <div className="phone animated flipInY" onClick={this.navigateTo.bind(this, phone.id)}>
-        <img src={phone.preview} alt={phone.title} />
-        <p>{phone.title}</p>
-      </div>
-    );
-  }
+const navigateTo = (id, history, onSelectedPhone, e) => {
+  history.push(`/phones/${id}`);
+  onSelectedPhone(id);
 }
+
+const PhoneItem = ({ phone, history, onSelectedPhone }) => (
+  <div className="phone animated flipInY" onClick={navigateTo.bind(this, phone.id, history, onSelectedPhone)}>
+    <img src={phone.preview} alt={phone.title} />
+    <p>{phone.title}</p>
+  </div>
+);
 
 export default PhoneItem;

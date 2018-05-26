@@ -3,10 +3,16 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import configureStore from '../../redux/store/configureStore';
 
+import Header from '../../features/Header';
 import { PhoneListContainer } from '../../containers';
 import { PhoneDetailContainer } from '../../containers';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect,
+  Switch
+} from 'react-router-dom';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -24,9 +30,13 @@ class App extends Component {
     return (
       <Provider store={ store }>
         <Router>
-          <div className="container">
-            <Route exact path="/phones" component={ PhoneListContainer } />
-            <Route exact path="/phones/:id" component={ PhoneDetailContainer } />
+          <div>
+            <Header />
+            <Switch>
+              <Route exact path="/phones" component={ PhoneListContainer } />
+              <Route exact path="/phones/:id" component={ PhoneDetailContainer } />
+              <Redirect from="/" to="/phones"/>
+            </Switch>
           </div>
         </Router>
       </Provider>
