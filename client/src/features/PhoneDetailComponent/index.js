@@ -19,8 +19,6 @@ class PhoneDetailComponent extends Component {
   }
 
   render() {
-    // const phone = this.props.phone;
-
     if (this.props.phoneList.pending || !this.props.phoneList.items ) {
       return (
         null
@@ -28,6 +26,13 @@ class PhoneDetailComponent extends Component {
     }
 
     const phone = this.props.phoneList.items[this.props.match.params.id]
+
+    if (typeof phone === 'undefined') {
+      this.props.history.push('/');
+      return (
+        null
+      );
+    }
 
     return (
       <div className="phone-detail-component animated bounceInDown">
