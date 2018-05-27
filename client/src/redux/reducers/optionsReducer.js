@@ -1,9 +1,11 @@
 import {
-  SELECTED_PHONE
+  SELECTED_PHONE,
+  TOOGLE_ANIMATIONS
 } from '../constants';
 
 const initialState = {
-  selectedPhone: null
+  selectedPhone: null,
+  toogleAnimations: true
 };
 
 export default function optionsReducer (state = initialState, action) {
@@ -12,6 +14,11 @@ export default function optionsReducer (state = initialState, action) {
       return {
         ...state,
         selectedPhone: action.payload
+      }
+    case TOOGLE_ANIMATIONS:
+      return {
+        ...state,
+        toogleAnimations: !state.toogleAnimations
       }
     default:
       return state;

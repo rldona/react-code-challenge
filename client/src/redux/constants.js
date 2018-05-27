@@ -1,6 +1,7 @@
 /* App options */
 
-export const SELECTED_PHONE = 'CURRENT_PHONE';
+export const SELECTED_PHONE    = 'SELECTED_PHONE';
+export const TOOGLE_ANIMATIONS = 'TOOGLE_ANIMATIONS';
 
 /* Groups */
 

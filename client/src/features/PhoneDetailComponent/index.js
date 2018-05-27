@@ -33,7 +33,7 @@ class PhoneDetailComponent extends Component {
 
     if (typeof phone === 'undefined') {
       return (
-        <div className="phone-detail-component animated bounceInDown">
+        <div className={`phone-detail-component ${ this.props.appOptions.toogleAnimations ? 'animated bounceInDown' : null }`}>
           <div className="content">
             <Icon icon={ ic_arrow_back } size={30} className="button go-back" onClick={this._goHome} />
             <div>There is no phone with that identifier :(</div>
@@ -43,7 +43,7 @@ class PhoneDetailComponent extends Component {
     }
 
     return (
-      <div className="phone-detail-component animated bounceInDown">
+      <div className={`phone-detail-component ${ this.props.appOptions.toogleAnimations ? 'animated bounceInDown' : null }`}>
         <div className="content">
           <Icon icon={ ic_arrow_back } size={30} className="button go-back" onClick={this._goBack} />
           <div className="image">

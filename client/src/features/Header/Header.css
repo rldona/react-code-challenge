@@ -1,7 +1,12 @@
 .header-component {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
   width: 100%;
   background: #FFF;
-  padding: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -9,4 +14,32 @@
   font-size: 1.2rem;
   font-weight: 400;
   color: #333;
+  cursor: pointer;
+}
+
+.header-component label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 1rem; */
+}
+
+.header-component span {
+  margin-left: 5px;
+}
+
+@media (min-width: 480px) {
+  .header-component {
+    padding: 2.5rem;
+    flex-wrap: nowrap;
+  }
+  .header-component label {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .header-component label {
+    margin-top: 2rem;
+  }
 }

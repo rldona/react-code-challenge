@@ -4,9 +4,11 @@ import { connect } from 'react-redux';
 
 import {
   selectedPhone,
+  toogleAnimations,
   getPhoneList
 } from '../../redux/actions';
 
+import Header from '../../features/Header';
 import Loading from '../../features/Loading';
 import PhoneDetailComponent from '../../features/PhoneDetailComponent';
 
@@ -30,8 +32,11 @@ class PhoneDetailContainer extends Component {
     const phone = this.props.phoneList.items[this.props.match.params.id]
 
     return (
-      <div className="phone-detail-container">
-        <PhoneDetailComponent phone={phone} {...this.props} />
+      <div>
+        <Header {...this.props} />
+        <div className="phone-detail-container">
+          <PhoneDetailComponent phone={phone} {...this.props} />
+        </div>
       </div>
     );
   }
@@ -47,6 +52,7 @@ const mapStateToProps = (state) => {
 function mapDispatchToProps (dispatch) {
   return {
     onSelectedPhone: () => dispatch(selectedPhone()),
+    onToogleAnimations: () => dispatch(toogleAnimations()),
     getPhoneList: () => dispatch(getPhoneList())
   };
 }
