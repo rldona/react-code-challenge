@@ -25,9 +25,9 @@ describe('# Api', function() {
     app.server.close();
   });
 
-  describe('GET: /zitycars/recharge/car2go/undefined/2017-04-15/2018-01-10/2/08:00/22:00', function() {
+  describe('GET: /phones', function() {
     it('should return 200', function (done) {
-      http.get('http://localhost:3000/api/zitycars/recharge/car2go/undefined/2017-04-15/2018-01-10/2/08:00/22:00');
+      http.get('http://localhost:3000/phones');
       done();
     });
   });
