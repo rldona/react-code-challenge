@@ -8,7 +8,6 @@ import {
   getPhoneList
 } from '../../redux/actions';
 
-import Header from '../../features/Header';
 import Loading from '../../features/Loading';
 import PhoneDetailComponent from '../../features/PhoneDetailComponent';
 
@@ -33,7 +32,6 @@ class PhoneDetailContainer extends Component {
 
     return (
       <div>
-        <Header {...this.props} />
         <div className="phone-detail-container">
           <PhoneDetailComponent phone={phone} {...this.props} />
         </div>

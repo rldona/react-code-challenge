@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { withRouter } from 'react-router-dom'
+import { connect } from 'react-redux';
+import { toogleAnimations } from '../../redux/actions';
+
 import Toggle from 'react-toggle';
 
 import './Header.css';
@@ -27,4 +31,17 @@ const Header = ({ appOptions, onToogleAnimations, history }) => (
   </div>
 );
 
-export default Header;
+const mapStateToProps = (state) => {
+  return {
+    appOptions: state.appOptions
+  };
+}
+
+function mapDispatchToProps (dispatch) {
+  return {
+    onToogleAnimations: () => dispatch(toogleAnimations())
+  };
+}
+
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));

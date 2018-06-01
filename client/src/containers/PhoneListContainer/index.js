@@ -8,7 +8,6 @@ import {
   toogleAnimations
 } from '../../redux/actions';
 
-import Header from '../../features/Header';
 import Loading from '../../features/Loading';
 import PhoneItem from '../../features/PhoneItem';
 
@@ -39,7 +38,6 @@ class PhoneListContainer extends Component {
 
     return (
       <div>
-        <Header {...this.props} />
         <div className="phone-list-container">
           <div className="content">
             { this._renderPhoneList() }
