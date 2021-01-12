@@ -4,6 +4,6 @@
 
 git add . &&
 git commit -am "$1" &&
-git push origin main
+git push origin master
 
 echo "Commit finished"
