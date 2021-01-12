@@ -1,6 +1,10 @@
 'use strict';
 
-var Server = require('./server');
+var _server = require('./server');
 
-Server.init();
+var _server2 = _interopRequireDefault(_server);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_server2.default.init();
 //# sourceMappingURL=index.js.map

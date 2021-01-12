@@ -14,8 +14,6 @@ import {
   Switch
 } from 'react-router-dom';
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
-
 import './App.css';
 
 const store = configureStore();
@@ -23,7 +21,6 @@ const store = configureStore();
 class App extends Component {
   constructor(props) {
     super(props);
-    injectTapEventPlugin();
   }
 
   render() {

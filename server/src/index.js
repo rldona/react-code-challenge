@@ -1,5 +1,5 @@
 'use strict';
 
-const Server = require('./server');
+import Server from './server';
 
 Server.init();
