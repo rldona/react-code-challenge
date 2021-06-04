@@ -1,15 +1,11 @@
 import { Router } from 'express';
 
-import { phoneList } from '../db';
+import phoneController from '../controllers/PhoneController'
 
 export default function routes() {
-	const api: Router = Router();
+	const api: Router = Router()
 
-	api.get('/phones', (req, res) => {
-		res.json(
-			phoneList
-		);
-	});
+	api.get('/phones', phoneController.phones)
 
-	return api;
+	return api
 }
