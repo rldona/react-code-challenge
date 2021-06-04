@@ -2,8 +2,8 @@
 
 Application that shows a list with the latest models of mobile phones and some of their features such as name, price, color, etc..
 
-![alt text](./app-home.png "Home preview")
-![alt text](./app-detail.png "Detail preview")
+![alt text](./github/assets/app-home.png "Home preview")
+![alt text](./github/assets/app-detail.png "Detail preview")
 
 ---
 ## Warning: All code, environment variables and docker commands have been tested and proven on a MacOS system. I understand that under a Windows system it will change something.
