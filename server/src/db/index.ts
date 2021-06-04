@@ -109,4 +109,4 @@ export const phoneList: Phone[] = [
     preview: 'https://images-eu.ssl-images-amazon.com/images/I/41dmEn1RKkL._AC_US160_.jpg',
     image: 'https://images-na.ssl-images-amazon.com/images/I/41dmEn1RKkL.jpg'
   }
-];
+]
