@@ -3,7 +3,7 @@ import { Request, Response} from 'express'
 import { phoneList } from '../db'
 
 class PhoneController {
-  phones(req: Request, res: Response) {
+  phones(_req: Request, res: Response) {
 		res.json(
 			phoneList
 		);
